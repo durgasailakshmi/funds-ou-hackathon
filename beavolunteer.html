@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Volunteer</title>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  background-color: #43b8f7;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+}
+
+
+nav {
+  float: right;
+  width: 30%;
+  height: auto; 
+  background: #ccc;
+  padding: 20px;
+}
+
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: auto;
+}
+
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <center><h1> Preferences of Volunteer</h1></center>
+</header>
+
+<section>
+  <nav>
+   <form action="volunteer.php" method="post">
+
+<h4>Choose Which Category u would like to Participate:</h4>
+  <select name="category2">
+    <option value="logistics">Logistics</option>
+    <option value="publicity">Publicity</option>
+    <option value="management">Management</option>
+  </select><br><br>
+  Suggestions:<br><br>
+  <textarea name="suggestions2"value="suggestions2" rows=10 cols=80>
+  </textarea>
+  <br><br>
+  <input type="submit">
+</form>
+</form>
+  </nav>
+  
+  <article>
+    <img src="https://www.tn.gov/content/tn/correction/redirect-agency-services/volunteer-opportunities/jcr%3Acontent/content/tn_image.img.jpg/1527788692864.jpg" width="100%" height="50%">
+    
+  </article>
+</section>
+
+
+
+</body>
+</html>

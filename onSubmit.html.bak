@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Donor page</title>
+</head>
+<body>
+	<form action=donor.php method=POST>
+		suggestions/message:
+		<textarea name="suggestions"value="suggestions2" rows=10 cols=80>
+  </textarea><br>
+		amount willing to donate:
+		<input type="number" name=amount>
+		<button>submit</button>
+		
+	</form>
+</body>
+</html>

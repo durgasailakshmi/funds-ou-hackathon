@@ -1,0 +1,31 @@
+<?php  
+$host = 'localhost';  
+$user = 'root';  
+$pass = '';  
+$dbname = 'funds';  
+$conn = mysqli_connect($host, $user, $pass,$dbname);  
+if(!$conn){  
+  die('Could not connect: '.mysqli_connect_error());  
+}  
+echo 'Connected successfully<br/>';  
+$username1=$_POST["mailid"];
+$password1=$_POST["pwd"]; 
+$sql = "SELECT * FROM signup where emailId='$username1' and password='$password1'";  
+$retval=mysqli_query($conn, $sql);  
+  
+if(mysqli_num_rows($retval) > 0){  
+session_start();
+ $_SESSION['emailId']=$username1;
+ while($row = mysqli_fetch_assoc($retval))
+ { 
+    header('Location: notification.php');
+ }
+ 
+}else{  
+echo "Invalid Details";
+header('Location: login.html');
+}  
+mysqli_close($conn);  
+?>  
+
+ 
