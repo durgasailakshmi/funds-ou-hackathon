@@ -62,18 +62,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <nav id="sidebar">
             <div class="sidebar-header">
                 <h1>
-                    <a href="#">R "SOL"</a>
+                    <a href="#">Menu</a>
                 </h1>
                 <span>M</span>
             </div>
             <div class="profile-bg"></div>
             <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="userdashboard.php">
-                        <i class="fas fa-th-large"></i>
-                        Dashboard
-                    </a>
-                </li>
+                
                 <li>
                     <a href="notification.php">
                         <i class="far fa-envelope"></i>
@@ -81,7 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </a>
                 </li>
                 <li>
-                    <a href="Events.html">
+                    <a href="events.html">
                         My Events
                         
                     </a>
@@ -164,8 +159,8 @@ if(mysqli_num_rows($retval) > 0){
 " budget: {$row['budget']} ";
 		$_SESSION['eventId']=$row['eventId'];
 	echo "
-	<br><a href='beavolunteer.php' target='_parent'><button name='beavolunteer' type='submit' value='Be a Volunteer'>Be a Volunteer</button></a>
-<a href='onSubmit.html' target='_parent'><button name='Investor' type='submit' value='Investor'>Investor</button></a>
+	<br><br><a href='beavolunteer.php' target='_parent'><button name='beavolunteer' type='submit' value='Be a Volunteer'>Be a Volunteer</button></a>
+<a href='onSubmit.html' target='_parent'><button name='Investor' type='submit' value='Investor'>Investor</button></a><br><br>
 </form>";
  }
 }else{  

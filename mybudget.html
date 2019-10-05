@@ -1,16 +1,32 @@
 
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+body {
+ background-image: url("https://www.redditstatic.com/desktop2x/img/gold/coins-package-7200.png");
+ background-repeat: no-repeat;
+ background-size:1000px 700px;
+ background-position:50% 0;
+}
+.budg{
+text-align: left;
+font-size:30px;
+}
+</style>
+</head>
 <body>
-<p></p>
+
 <form action="mybudget.php" method="post">
-  <center><br><br>Enter Event Name:<br><br>
-  <input type="text" name="eventname"></input>
+<div class="budg">
+  <br><br><b>Enter Event Name:</b><br><br>
+  <input type="text" name="eventname" style="width:300px;height:40px;"></input>
   <br>
   <br>
-  <input type="submit"/>
-  </center>
+  <input type="submit" style="width:160px;height:40px;font-size:30px;">
+ 
   <br>
+  </div>
 </form>
 </body>
 </html>

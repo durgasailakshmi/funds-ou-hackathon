@@ -28,7 +28,7 @@ if(mysqli_num_rows($retval1) > 0){
  }
 }
 else{  
-echo "No Suggestions for the event";  
+echo "No Suggestions for the event from investor";  
 }  
 mysqli_close($conn);  
 ?>  
