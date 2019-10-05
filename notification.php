@@ -159,7 +159,7 @@ if(mysqli_num_rows($retval) > 0){
 " budget: {$row['budget']} ";
 		$_SESSION['eventId']=$row['eventId'];
 	echo "
-	<br><br><a href='beavolunteer.php' target='_parent'><button name='beavolunteer' type='submit' value='Be a Volunteer'>Be a Volunteer</button></a>
+	<br><br><a href='beavolunteer.html' target='_parent'><button name='beavolunteer' type='submit' value='Be a Volunteer'>Be a Volunteer</button></a>
 <a href='onSubmit.html' target='_parent'><button name='Investor' type='submit' value='Investor'>Investor</button></a><br><br>
 </form>";
  }
